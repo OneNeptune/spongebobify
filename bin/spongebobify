@@ -1,0 +1,12 @@
+#!/usr/bin/env ruby
+
+require 'bundler/setup'
+require 'spongebobify'
+
+if ARGV.length > 0
+  puts Spongebobify.process(ARGV.join(" "))
+else
+  STDIN.each_line do |line|
+    puts Spongebobify.process(line || [])
+  end
+end
