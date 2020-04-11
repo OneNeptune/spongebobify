@@ -1,40 +1,35 @@
-# Spongebobify
+# sPoNgEbObIfY
 
-Welcome to your new gem! In this directory, you'll find the files you need to be able to package up your Ruby library into a gem. Put your Ruby code in the file `lib/spongebobify`. To experiment with that code, run `bin/console` for an interactive prompt.
+cOnVeRt nOrMaL PaRlAnCe iNtO WaY MoRe sArCaStIc sPoNgEbOb cLuCkInG ChIcKeN StYlE.
 
-TODO: Delete this and the text above, and describe your gem
+## iNsTaLlAtIoN
 
-## Installation
-
-Add this line to your application's Gemfile:
+aDd tHiS LiNe tO YoUr aPpLiCaTiOn's gEmFiLe:
 
 ```ruby
 gem 'spongebobify'
 ```
 
-And then execute:
+aNd tHeN ExEcUtE:
 
     $ bundle install
 
-Or install it yourself as:
+oR InStAlL It yOuRsElF As:
 
     $ gem install spongebobify
 
-## Usage
+## uSaGe
 
-TODO: Write usage instructions here
+```
+$ bin/spongebobify boring text lacking in sarcasm
+=> bOrInG TeXt lAcKiNg iN SaRcAsM
+```
 
-## Development
+```
+$ bin/spongebobify < input.txt
+=> bOrInG TeXt lAcKiNg iN SaRcAsM
+```
 
-After checking out the repo, run `bin/setup` to install dependencies. You can also run `bin/console` for an interactive prompt that will allow you to experiment.
+## lIcEnSe
 
-To install this gem onto your local machine, run `bundle exec rake install`. To release a new version, update the version number in `version.rb`, and then run `bundle exec rake release`, which will create a git tag for the version, push git commits and tags, and push the `.gem` file to [rubygems.org](https://rubygems.org).
-
-## Contributing
-
-Bug reports and pull requests are welcome on GitHub at https://github.com/[USERNAME]/spongebobify.
-
-
-## License
-
-The gem is available as open source under the terms of the [MIT License](https://opensource.org/licenses/MIT).
+tHe gEm iS AvAiLaBlE As oPeN SoUrCe uNdEr tHe tErMs oF ThE [MiT LiCeNsE](https://opensource.org/licenses/MIT).

@@ -5,7 +5,7 @@ require 'spongebobify'
 
 if ARGV.length > 0
   puts Spongebobify.process(ARGV.join(" "))
-else
+elsif !STDIN.tty?
   STDIN.each_line do |line|
     puts Spongebobify.process(line || [])
   end
