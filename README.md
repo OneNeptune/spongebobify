@@ -4,30 +4,34 @@ cOnVeRt nOrMaL PaRlAnCe iNtO WaY MoRe sArCaStIc sPoNgEbOb cLuCkInG ChIcKeN StYlE
 
 ## iNsTaLlAtIoN
 
-aDd tHiS LiNe tO YoUr aPpLiCaTiOn's gEmFiLe:
+
+iNsTaLl tHe gEm:
 
 ```ruby
-gem 'spongebobify'
+gem install spongebobify
 ```
 
-aNd tHeN ExEcUtE:
+aNd tHeN AdD SoMeThInG LiKe tHiS To yOuR .zShRc oR EqUiVaLeNt:
 
-    $ bundle install
-
-oR InStAlL It yOuRsElF As:
-
-    $ gem install spongebobify
+```
+export PATH=$(ruby -e 'puts Gem.user_dir')/bin:$PATH
+```
 
 ## uSaGe
 
 ```
-$ bin/spongebobify boring text lacking in sarcasm
+$ spongebobify "boring text lacking in sarcasm"
 => bOrInG TeXt lAcKiNg iN SaRcAsM
 ```
 
 ```
-$ bin/spongebobify < input.txt
-=> bOrInG TeXt lAcKiNg iN SaRcAsM
+$ spongebobify ./war-and-peace.txt
+=> cHaPtEr i
+
+"wElL, pRiNcE, sO GeNoA AnD LuCcA ArE NoW JuSt fAmIlY EsTaTeS Of tHe
+bUoNaPaRtEs. BuT I WaRn yOu, If yOu dOn't tElL Me tHaT ThIs mEaNs wAr,
+If yOu sTiLl tRy tO DeFeNd tHe iNfAmIeS AnD HoRrOrS PeRpEtRaTeD By tHaT
+AnTiChRiSt--I ReAlLy bElIeVe hE Is aNtIcHrIsT...
 ```
 
 ## lIcEnSe
