@@ -5,15 +5,20 @@ require 'spongebobify'
 
 module Spongebobify
   class CLI < Thor
-    desc "spongebobify TEXT", "Converts TEXT to spongebob case"
-    def spongebobify(text = nil)
-      if text.nil? && $stdin.tty?
-        puts "No input provided. Use 'spongebobify \"some text\"' or 'spongebobify << ./some_file.txt'"
+    desc "spongebobify [TEXT|FILE]", "Converts TEXT or contents of FILE to spongebob case"
+    def spongebobify(input = nil)
+      if input.nil? && $stdin.tty?
+        puts "No input provided. Use 'spongebobify \"some text\"' or 'spongebobify ./path_to_file.txt'"
         exit 1
       end
 
-      input = text || $stdin.read
-      puts Spongebobify.process(input)
+      if File.exist?(input)
+        text = File.read(input)
+      else
+        text = input
+      end
+
+      puts Spongebobify.process(text)
     end
 
     default_task :spongebobify
