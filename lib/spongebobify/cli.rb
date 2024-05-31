@@ -15,5 +15,7 @@ module Spongebobify
       input = text || $stdin.read
       puts Spongebobify.process(input)
     end
+
+    default_task :spongebobify
   end
 end
