@@ -18,9 +18,9 @@ module Spongebobify
 
     input_string.each_byte do |byte|
       if index % 2 == 0
-        new_string << (is_lowercase(byte) ? (byte ^ 32).chr : byte.chr)
-      else
         new_string << (is_uppercase(byte) ? (byte ^ 32).chr : byte.chr)
+      else
+        new_string << (is_lowercase(byte) ? (byte ^ 32).chr : byte.chr)
       end
       index += 1
     end
