@@ -11,7 +11,7 @@ module Spongebobify
         puts "No input provided. Use 'spongebobify \"some text\"' or 'spongebobify << ./some_file.txt'"
         exit 1
       end
-      
+
       input = text || $stdin.read
       puts Spongebobify.process(input)
     end
