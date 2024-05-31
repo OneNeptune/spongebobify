@@ -14,18 +14,18 @@ end
 module Spongebobify
   def self.process(input_string)
     index = 0
-    new_string = String.new
+    byte_array = []
 
     input_string.each_byte do |byte|
       if index % 2 == 0
-        new_string << (is_uppercase(byte) ? (byte ^ 32).chr : byte.chr)
+        byte_array << (is_uppercase(byte) ? (byte ^ 32) : byte)
       else
-        new_string << (is_lowercase(byte) ? (byte ^ 32).chr : byte.chr)
+        byte_array << (is_lowercase(byte) ? (byte ^ 32) : byte)
       end
       index += 1
     end
 
-    new_string
+    byte_array.pack('C*')
   end
 end
 
