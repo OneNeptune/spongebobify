@@ -5,4 +5,4 @@ $LOAD_PATH.unshift File.expand_path('../../lib', __FILE__)
 
 require 'spongebobify/cli'
 
-Spongebobify::CLI.start(ARGV)
+Spongebobify::CLI.start(ARGV.dup.unshift("spongebobify"))
