@@ -2,18 +2,22 @@ PATH
   remote: .
   specs:
     spongebobify (0.1.1)
+      thor (~> 1.0)
 
 GEM
   remote: https://rubygems.org/
   specs:
     rake (12.3.3)
+    thor (1.3.1)
 
 PLATFORMS
+  arm64-darwin-22
   ruby
 
 DEPENDENCIES
   rake (~> 12.0)
   spongebobify!
+  thor
 
 BUNDLED WITH
-   1.17.2
+   2.5.11
